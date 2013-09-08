@@ -1,0 +1,22 @@
+/* line 1 */
+.container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* line 5 */
+.container .header {
+  background: url("/images/header.png") no-repeat;
+  height: 210px;
+}
+/* line 8 */
+.container .header .menu {
+  cursor: pointer;
+  margin: 168px 0 0 0px;
+  background-color: yellow;
+}
+/* line 13 */
+.container .header .quote {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding-top: 30px;
+}
