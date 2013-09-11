@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %title c2renew
+    %link(rel="stylesheet" href="stylesheets/bootstrap.min.css")
+    %link(rel="stylesheet" href="stylesheets/style.css")
+    = javascripts('bootstrap.min')
+  %body
+    .shell
+      .container
+        .row
+          .col-md-12
+            .header
+              <a href="/" class="home-img-link"><img src="images/logo.png" class="logo"/></a>
+              .col-md-7.menu
+                %ul.nav.nav-pills
+                  %li 
+                    = link "Engineering Services"
+                  %li
+                    = link "Materials"
+                  %li
+                    = link "Why Biomass?"
+                  %li
+                    = link "About Us"
+                  %li
+                    = link "Contact"
+
+              .col-md-5
+                .quote
+                  %h1
+                    We turn agricultural waste 
+                    %br/
+                    into just about anything.
+      = yield
