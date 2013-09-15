@@ -6,58 +6,124 @@ html {
 /* line 7 */
 body {
   background-color: #39362f;
+  color: #666666;
   height: 100%;
 }
-/* line 10 */
+/* line 11 */
 body .shell {
   box-shadow: 0px 3px 68px black;
-  height: 100%;
+  min-height: 100%;
   background-color: white;
   margin-left: auto !important;
   margin-right: auto !important;
   max-width: 1170px;
+  background-color: #FAFFDF;
 }
-/* line 18 */
+/* line 20 */
 body .container {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-/* line 21 */
+/* line 23 */
 body .container .header {
   position: relative;
   background: url("/images/header.png") no-repeat;
   height: 210px;
   box-shadow: 0px 3px 3px;
 }
-/* line 26 */
+/* line 28 */
 body .container .header .menu {
   cursor: pointer;
   margin: 168px 0 0 0px;
   background-color: #39362f;
   box-shadow: 0px 3px 3px;
+  padding-top: 4px;
 }
-/* line 31 */
+/* line 34 */
 body .container .header .menu a {
   color: #f5f1ba;
 }
-/* line 33 */
+/* line 36 */
 body .container .header .menu a:hover {
   color: #39362f;
   background-color: #f5f1ba;
 }
-/* line 40 */
+/* line 43 */
 body .container .header .quote {
   color: white;
   text-shadow: 1px 1px 1px black;
   padding-top: 30px;
 }
-/* line 45 */
+/* line 48 */
 body .container .header .logo {
   position: absolute;
   left: 20px;
   box-shadow: 0px 3px 3px black;
 }
-/* line 50 */
+/* line 53 */
 body .container .header h1 {
   color: #f5f1ba;
+}
+/* line 57 */
+body .container .content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0px 1px 1px grey;
+  min-height: 400px;
+}
+/* line 67 */
+body .homepage .story {
+  background-color: #DBD7D7;
+  padding: 18px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0px 1px 1px grey;
+  min-height: 160px;
+}
+/* line 68 */
+body .homepage .story img {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+/* line 78 */
+body .homepage .story .arrow {
+  position: absolute;
+  left: 159px;
+  top: 211px;
+  box-shadow: 3px 3px 3px;
+}
+/* line 83 */
+body .homepage .story .arrow .arrow_box {
+  position: relative;
+  background: #39362f;
+}
+/* line 87 */
+body .homepage .story .arrow .arrow_box:after {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 96 */
+body .homepage .story .arrow .arrow_box:after {
+  border-color: rgba(57, 54, 47, 0);
+  border-left-color: #39362f;
+  border-width: 30px;
+  top: 50%;
+  margin-top: -30px;
+}
+/* line 103 */
+body .homepage .story .arrow .box {
+  background: #39362f;
+}
+/* line 106 */
+body .homepage .story .arrow .text {
+  color: white;
+  font-size: 1.4em;
+  padding: 8px;
 }
