@@ -6,14 +6,16 @@ html {
 }
 body {
   background-color: #39362f;
+  color: #666666;
   height: 100%;
   .shell {
     box-shadow: 0px 3px 68px black;
-    height: 100%;
+    min-height: 100%;
     background-color: white;
     margin-left: auto !important;
     margin-right: auto !important;
     max-width: 1170px;
+    background-color: #FAFFDF;
    }
   .container {
     margin-left: auto !important;
@@ -28,6 +30,7 @@ body {
         margin: 168px 0 0 0px;
         background-color: $brown;
         box-shadow: 0px 3px 3px;
+        padding-top: 4px;
         a {
           color: $yellow;
           &:hover {
@@ -51,5 +54,62 @@ body {
         color: $yellow;
       } //h1
     } //header
+    .content {
+      background-color: white;
+      padding: 18px;
+      border-radius: 5px;
+      margin: 20px;
+      box-shadow: 0px 1px 1px grey;
+      min-height: 400px;
+    } //content
   } //container
+  .homepage {
+    .story {
+      img {
+        border: 1px solid grey; 
+        border-radius: 5px;
+      }
+      background-color: #DBD7D7;
+      padding: 18px;
+      border-radius: 5px;
+      margin: 20px;
+      box-shadow: 0px 1px 1px grey;
+      min-height: 160px;
+        .arrow {
+          position: absolute;
+          left: 159px;
+          top: 211px;
+          box-shadow: 3px 3px 3px;
+          .arrow_box {
+            position: relative;
+            background: $brown;
+          }
+          .arrow_box:after {
+            left: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+          }
+          .arrow_box:after {
+            border-color: rgba(57, 54, 47, 0);
+            border-left-color: $brown;
+            border-width: 30px;
+            top: 50%;
+            margin-top: -30px;
+          }
+          .box {
+            background: $brown;
+          } // box
+          .text {
+            color: white;
+            font-size: 1.4em;
+            padding: 8px;
+          }
+        }
+    } //story
+  } //hompage
+
 } //body
